@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argentina's inflation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Argentina's inflation</h1>
+    <p>You can check here the inflation for the current month (if available) or for a period of time</p>
+    <label for="fromDate">Select from date</label>
+    <input type="date" id="fromDate" name="fromDate">
+
+    <label for="toDate">Select to date</label>
+    <input type="date" id="toDate" name="toDate">
+
+    <button onclick="getData()" id="inflationButton">Get Inflation</button>
+    <button onclick="clearData()" id="clearButton">Clear</button>
+
+    <div id="responseData">
+        <table id="inflationTable">
+            <thead id="tableHead">
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
