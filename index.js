@@ -28,6 +28,9 @@ function getData() {
 // render the data, inflation table and accumulated inflation
 function renderData(data) {
     
+    console.log(data);
+    
+    
     let accumulatedInflation = 0;
    
     // create the table head and body

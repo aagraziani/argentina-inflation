@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Argentina's inflation</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Argentina's inflation</h1>
-    <p>You can check here the inflation for the current month (if available) or for a period of time</p>
-    <label for="fromDate">Select from date</label>
-    <input type="date" id="fromDate" name="fromDate">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tracing Argetina's inlfation, one Peso at a time</h1>
+      <p>
+        Curious about how much Argentina’s inflation has shrunk your pesos? Our inflation calculator has you covered! Just enter two dates, and see the change in purchasing power over time. It’s like a time machine for your wallet—no finance degree required!
+      </p>
 
-    <label for="toDate">Select to date</label>
-    <input type="date" id="toDate" name="toDate">
+      
+        <label for="fromDate">Select from date</label>
+        <input type="date" id="fromDate" name="fromDate" />
 
-    <button onclick="getData()" id="inflationButton">Get Inflation</button>
-    <button onclick="clearData()" id="clearButton">Clear</button>
+        <label for="toDate">Select to date</label>
+        <input type="date" id="toDate" name="toDate" />
 
-    <div id="responseData">
-        <table id="inflationTable">
-            <thead id="tableHead">
-            </thead>
-            <tbody id="tableBody"></tbody>
-        </table>
+        <button onclick="getData()" id="inflationButton">Get Inflation</button>
+        <button onclick="clearData()" id="clearButton">Clear</button>
+      
     </div>
-
+      <div id="responseData">
+        <table id="inflationTable">
+          <thead id="tableHead"></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
